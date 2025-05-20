@@ -1,0 +1,50 @@
+=> npm i redux react-redux
+
+Ref: https://redux.js.org
+
+Data flow =>>>
+UI > User Event > dispatch > Action > Reducer > Store > State > UI (Provider => Redux + React)
+
+Data Carry => Action ( Type, Payload{data} )
+
+redux devtools extension download ==>
+window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+after store => main index.js file to rovider store={store}
+
+for UI Tailwind CSS -> Flowbite
+
+install flowbite from => https://flowbite.com/docs/getting-started/react/
+
+CDN link for tailwind css => public/index.html file
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+
+Roter install => npm i react-router reacter-router-dom
+
+tailwindComponents.com
+
+tailwind.config.js => 
+const flowbite = require("flowbite-react/tailwind");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html", "./src/**/*.{js,ts,jsx,tsx}",
+    // ...
+    flowbite.content(),
+  ],
+  plugins: [
+    // ...
+    flowbite.plugin(),
+  ],
+};
+
+API ref : https://themoviedb.org
+key => 7cb58781737e77d5729e33664963295a
+url => https://api.themoviedb.org/3/movie/now_playing?api_key=7cb58781737e77d5729e33664963295a
+
+img url => https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg
+
+for detail => https://api.themoviedb.org/3/movie/{movie_id}
+
+search movie => https://api.themoviedb.org/3/search/movie?query=SEARCH_DATA&api_key=7cb58781737e77d5729e33664963295a
